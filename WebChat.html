@@ -38,16 +38,16 @@
         embedded_svc.settings.entryFeature = 'LiveAgent';
 
         embedded_svc.init(
-            'https://masterbrand--uat.my.salesforce.com',
-            'https://uat-q2o.cs172.force.com/Omega',
+            'https://masterbrand--devap01.my.salesforce.com',
+            'https://devap01-q2o.cs23.force.com/Omega',
             gslbBaseURL,
-            '00D590000008aQ2',
+            '00D180000002in8',
             'Agent',
             {
-                baseLiveAgentContentURL: 'https://c.la4-c1cs-ia5.salesforceliveagent.com/content',
-                deploymentId: '572590000004CAF',
-                buttonId: '573590000004CAy',
-                baseLiveAgentURL: 'https://d.la4-c1cs-ia5.salesforceliveagent.com/chat',
+                baseLiveAgentContentURL: 'https://c.la4-c1cs-phx.salesforceliveagent.com/content',
+                deploymentId: '572180000004CQi',
+                buttonId: '573180000004Cfu',
+                baseLiveAgentURL: 'https://d.la4-c1cs-phx.salesforceliveagent.com/chat',
                 eswLiveAgentDevName: 'Agent',
                 isOfflineSupportEnabled: false
             }
@@ -56,7 +56,7 @@
 
     if (!window.embedded_svc) {
         var s = document.createElement('script');
-        s.setAttribute('src', 'https://masterbrand--uat.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+        s.setAttribute('src', 'https://masterbrand--devap01.my.salesforce.com/embeddedservice/5.0/esw.min.js');
         s.onload = function() {
             initESW(null);
         };
